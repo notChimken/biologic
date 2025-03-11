@@ -1,0 +1,85 @@
+[gd_scene load_steps=8 format=3 uid="uid://bhgi6q8o0ngri"]
+
+[ext_resource type="Script" path="res://difficulty_selection.gd" id="1_hu6n4"]
+[ext_resource type="Texture2D" path="res://PICTURES/landscape (9).png" id="2_e64hr"]
+[ext_resource type="Texture2D" path="res://landscape (2500 x 1080 px) (2500 x 600 px) (3).png" id="7_e00i5"]
+[ext_resource type="Texture2D" path="res://PICTURES/9.png" id="7_exepl"]
+[ext_resource type="Theme" path="res://PICTURES/BUTTONS/EASY.tres" id="11_2vkok"]
+[ext_resource type="Theme" path="res://PICTURES/BUTTONS/AVERAGE.tres" id="12_ccn4b"]
+[ext_resource type="Theme" path="res://PICTURES/BUTTONS/HARD.tres" id="13_wqbg5"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="DifficultySelection" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+script = ExtResource("1_hu6n4")
+
+[node name="TextureRect" type="TextureRect" parent="DifficultySelection"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_e64hr")
+expand_mode = 1
+
+[node name="BACK BUTTON" type="TextureButton" parent="DifficultySelection"]
+layout_mode = 0
+offset_left = -67.0
+offset_top = 6.0
+offset_right = 333.0
+offset_bottom = 102.0
+texture_normal = ExtResource("7_e00i5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="DifficultySelection"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LOGO" type="TextureRect" parent="DifficultySelection/VBoxContainer2"]
+custom_minimum_size = Vector2(50, 110)
+layout_mode = 2
+texture = ExtResource("7_exepl")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="EASY" type="Button" parent="DifficultySelection"]
+clip_children = 2
+layout_mode = 0
+offset_left = 318.0
+offset_top = 160.0
+offset_right = 821.0
+offset_bottom = 304.0
+theme = ExtResource("11_2vkok")
+
+[node name="AVERAGE" type="Button" parent="DifficultySelection"]
+layout_mode = 0
+offset_left = 353.0
+offset_top = 308.0
+offset_right = 902.0
+offset_bottom = 417.0
+theme = ExtResource("12_ccn4b")
+
+[node name="HARD" type="Button" parent="DifficultySelection"]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 416.0
+offset_right = 919.0
+offset_bottom = 525.0
+theme = ExtResource("13_wqbg5")
+
+[connection signal="pressed" from="DifficultySelection/BACK BUTTON" to="DifficultySelection" method="_on_back_button_pressed"]
+[connection signal="pressed" from="DifficultySelection/EASY" to="DifficultySelection" method="_on_easy_pressed"]
+[connection signal="pressed" from="DifficultySelection/AVERAGE" to="DifficultySelection" method="_on_average_pressed"]
+[connection signal="pressed" from="DifficultySelection/HARD" to="DifficultySelection" method="_on_hard_pressed"]
