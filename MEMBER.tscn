@@ -25,6 +25,7 @@ texture = ExtResource("1_xp4mi")
 expand_mode = 1
 
 [node name="BACK BUTTON" type="TextureButton" parent="Control/TextureRect"]
+layout_mode = 0
 offset_left = -67.0
 offset_top = 6.0
 offset_right = 333.0
