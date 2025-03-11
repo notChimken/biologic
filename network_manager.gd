@@ -40,18 +40,23 @@ func join_game(ip_address: String):
 	return true
 	
 @rpc("any_peer", "reliable")
-func join_lobby(player_name : String):
+func join_lobby(player_name):
 	var peer_id = multiplayer.get_remote_sender()
+	player_list[peer_id] = player_name 
+	
+	print("👤 Player joined:", peer_id, "Name:", player_name)
 	
 	if multiplayer.is_server():
 		player_list[peer_id] = player_name
-		print(player_name, "joined the lobby")
+		print(player_name, "joined the lobby", peer_id)
 		
 		update_lobby.rpc(player_list)
 	else:
 		print("Error: Non-server tried to modify the lobby!")
+		
+	lobby_updated.emit()
 	
-@rpc("any_peer", "reliable")
+@rpc("authority", "reliable")
 func update_lobby(updated_list):
 	player_list = updated_list
 	lobby_updated.emit()

@@ -1,14 +1,14 @@
 [gd_scene load_steps=23 format=3 uid="uid://q7qbsa7fi7lj"]
 
 [ext_resource type="Script" path="res://MULTILPLECHOICE/MSCRIPTS/MCONTROLLERS/MGAME_CONTROLLER.gd" id="1_blsmx"]
-[ext_resource type="Texture2D" path="res://MultiplayerScripts/14.png" id="2_dfarq"]
-[ext_resource type="Resource" path="res://MULTILPLECHOICE/MSCRIPTS/MRESOURCE/MVARIED/MTHEME/MTHEME_VARIED.tres" id="2_s7g20"]
-[ext_resource type="Texture2D" path="res://MULTILPLECHOICE/MUI/landscape (5).png" id="3_b35ft"]
-[ext_resource type="Texture2D" path="res://MultiplayerScripts/15.png" id="3_d7k30"]
-[ext_resource type="Texture2D" path="res://MultiplayerScripts/16.png" id="4_lfwpo"]
-[ext_resource type="Texture2D" path="res://MultiplayerScripts/17.png" id="5_6w6mn"]
-[ext_resource type="AudioStream" path="res://AUDIO/CORRECT.MP3" id="8_ri1ek"]
-[ext_resource type="AudioStream" path="res://AUDIO/WRONG.mp3" id="9_ou58w"]
+[ext_resource type="Texture2D" uid="uid://c1rgibjnb815c" path="res://MultiplayerScripts/14.png" id="2_dfarq"]
+[ext_resource type="Resource" uid="uid://bbkl1c3104ohg" path="res://MULTILPLECHOICE/MSCRIPTS/MRESOURCE/MVARIED/MTHEME/MTHEME_VARIED.tres" id="2_s7g20"]
+[ext_resource type="Texture2D" uid="uid://cp185r0f1h3qe" path="res://MULTILPLECHOICE/MUI/landscape (5).png" id="3_b35ft"]
+[ext_resource type="Texture2D" uid="uid://clowp872iqadl" path="res://MultiplayerScripts/15.png" id="3_d7k30"]
+[ext_resource type="Texture2D" uid="uid://br0xas1xtrxxf" path="res://MultiplayerScripts/16.png" id="4_lfwpo"]
+[ext_resource type="Texture2D" uid="uid://cyetkdmwmes45" path="res://MultiplayerScripts/17.png" id="5_6w6mn"]
+[ext_resource type="AudioStream" uid="uid://yq4dmn5aipaf" path="res://AUDIO/CORRECT.MP3" id="8_ri1ek"]
+[ext_resource type="AudioStream" uid="uid://doy1evnpp8lu5" path="res://AUDIO/WRONG.mp3" id="9_ou58w"]
 
 [sub_resource type="FontVariation" id="FontVariation_ebodp"]
 

@@ -1,12 +1,12 @@
 [gd_scene load_steps=9 format=3 uid="uid://dvpejcyaecw4f"]
 
-[ext_resource type="Texture2D" path="res://PICTURES/landscape (7).png" id="1_xk0pl"]
-[ext_resource type="Texture2D" path="res://PICTURES/9.png" id="2_foga5"]
-[ext_resource type="Texture2D" path="res://PICTURES/5.png" id="3_4pv8o"]
+[ext_resource type="Texture2D" uid="uid://d14qyqubdvw5s" path="res://PICTURES/landscape (7).png" id="1_xk0pl"]
+[ext_resource type="Texture2D" uid="uid://bdc831bvj0yo4" path="res://PICTURES/9.png" id="2_foga5"]
+[ext_resource type="Texture2D" uid="uid://4jlee71o1c7y" path="res://PICTURES/5.png" id="3_4pv8o"]
 [ext_resource type="Script" path="res://button.gd" id="4_vdnms"]
-[ext_resource type="Texture2D" path="res://PICTURES/7.png" id="5_ew1cx"]
+[ext_resource type="Texture2D" uid="uid://c1j700sc4hfb4" path="res://PICTURES/7.png" id="5_ew1cx"]
 [ext_resource type="Script" path="res://SETTINGSBUTTON.gd" id="6_ihkq5"]
-[ext_resource type="Texture2D" path="res://PICTURES/6.png" id="7_xn6ax"]
+[ext_resource type="Texture2D" uid="uid://bq1lytjpitg6n" path="res://PICTURES/6.png" id="7_xn6ax"]
 [ext_resource type="Script" path="res://TOPICSBUTTON.gd" id="8_gnwe4"]
 
 [node name="Control" type="Control"]
